@@ -1,5 +1,5 @@
 # react-pract
-<img width="1227" height="816" alt="Screenshot 2026-03-19 at 3 40 19 PM" src="https://github.com/user-attachments/assets/404f43b4-21f0-452a-b322-a5a5a53e2f42" />
+
 # Server Control Dashboard — Full-Stack Spring Boot + React
 
 A production-ready monorepo with a **Spring Boot** backend (Java 21, Maven) and a **React** frontend (Vite, TypeScript). The React app is built and bundled into the Spring Boot JAR so the final artifact is a **single executable JAR**.
@@ -11,7 +11,8 @@ A production-ready monorepo with a **Spring Boot** backend (Java 21, Maven) and 
 ## Table of Contents
 
 - [Project Structure](#project-structure)
-- [Prerequisites](#prerequisites)
+- [Prerequisites](#prerequisites)![WhatsApp Image 2026-03-20 at 2 30 00 PM (1)](https://github.com/user-attachments/assets/65083d74-bb05-4e93-8c81-1eb498e87b41)
+
 - [Creating This Project From Scratch](#creating-this-project-from-scratch)
 - [Dependencies](#dependencies)
 - [Development (hot-reload)](#development-hot-reload)
