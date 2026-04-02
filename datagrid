@@ -1,0 +1,89 @@
+Act as a senior React architect. Build a production-ready reusable DataGrid component using MUI (Material UI v5+) with TypeScript.
+
+Project Context:
+
+- Frontend: React (functional components with hooks)
+- State Management: Redux Toolkit
+- UI Library: MUI (DataGrid / DataGridPro if needed)
+- Backend: Spring Boot (supports pagination, sorting, filtering via API)
+- Existing pattern: Custom DataGrid wrapper with expandable rows
+
+Requirements:
+
+1. Core Features:
+
+- Server-side pagination, sorting, and filtering
+- Column-level filtering (text, number, date)
+- Global search support
+- Debounced API calls
+- Loading states and skeleton UI
+- Error handling UI
+
+2. Advanced Features:
+
+- Expandable rows (master-detail panel)
+- Row selection with checkbox
+- Bulk actions (delete, export, etc.)
+- Column visibility toggle
+- Column reordering and resizing
+- Sticky header and responsive layout
+
+3. Performance:
+
+- Avoid unnecessary re-renders (useMemo, useCallback)
+- Virtualization support (default from MUI)
+- Efficient Redux integration (avoid redundant API calls)
+
+4. Customization:
+
+- Accept dynamic column configuration
+- Support custom cell renderers
+- Theming support (light/dark)
+- Reusable across modules (patients, invoices, orders)
+
+5. API Integration:
+
+- Use Redux Toolkit async thunks for API calls
+- Follow this request structure:
+  {
+  page: number,
+  size: number,
+  sort: [{ field: string, direction: 'asc' | 'desc' }],
+  filters: { field: string, operator: string, value: any }[],
+  search: string
+  }
+
+6. Expandable Row:
+
+- Render a detail panel when row is expanded
+- Accept a render prop for custom expanded content
+
+7. Code Structure:
+
+- Create:
+  - DataGridWrapper.tsx (main component)
+  - useDataGrid.ts (custom hook for logic)
+  - dataGridSlice.ts (Redux slice)
+- Keep code modular and scalable
+
+8. UI/UX:
+
+- Show empty state if no data
+- Show proper error messages
+- Add toolbar with search, filter, export buttons
+- Smooth animations for row expansion
+
+9. Deliverables:
+
+- Full working code with TypeScript
+- Proper typing for props and API response
+- Example usage with sample columns and API integration
+- Comments explaining key decisions
+
+10. Bonus:
+
+- Export to CSV/Excel
+- Persist column state (localStorage)
+- Role-based column visibility
+
+Output clean, well-structured, production-ready code only. Avoid pseudo-code.
